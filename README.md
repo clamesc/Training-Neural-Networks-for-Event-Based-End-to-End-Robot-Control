@@ -58,4 +58,3 @@ During the lap, the robot's position on the course, as well as its distance to t
  - Tensorflow 0.12.1
  - NEST 2.10.0
 
-# Event-Based-End-to-End-Robot-Control
