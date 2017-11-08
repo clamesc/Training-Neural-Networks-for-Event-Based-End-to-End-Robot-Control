@@ -1,12 +1,18 @@
 # Training Neural Networks for Event-Based End-to-End Robot Control
 
-This repository contains the code that has been written for the Master's thesis "Training Neural Networks for Event-Based End-to-End Robot Control":
+This repository contains the code of my Master's thesis "[Training Neural Networks for Event-Based End-to-End Robot Control](TrainingNeuralNetworksForEventBasedEndToEndRobotControl_ClausMeschede.pdf)":
 
 - **Controller:** Contains the controller code as well as Matplotlib plots.
 - **Documentation:** Latex thesis files as well as final presentation.
 - **V-REP Scenarios:** The V-REP scene files for 3 different lane following scenarios as well as the Lua script handling the communication between robot and controller via ROS can be found here.
 - **data.tar.gz:** Contains all data
 - **TrainingNeuralNetworksForEventBasedEndToEndRobotControl_ClausMeschede.pdf:** Thesis PDF file
+
+## Abstract
+
+In the recent past, reinforcement learning algorithms such as Deep Q-Learning (DQN) have gained attention due to their promise of solving complex decision making tasks in high-dimensional state spaces. Despite the successes, the amount of neurons and connections in deep Artifcial Neural Networks (ANN) makes applications computationally expensive, time-consuming and energetically inefficient, which is particularly problematic in real-time applications and mobile devices, e.g. autonomous robots. Event-based Spiking Neural Networks (SNN) performing computations on neuromorphic hardware could help solve some of these problems, although it is not clear yet how to train them efficiently, especially in reinforcement learning tasks. However, building energy-efficient mobile robots in the future could greatly benefit from SNNs with reinforcement learning capabilities.
+Therefore, a simulated lane following task was implemented in this thesis using a Dynamic Vision Sensor (DVS) for event-driven data processing in order to provide a testing ground for training algorithms. Hereby, the problem was approached from two different directions. First, a policy was learned using the DQN algorithm and transferred afterwards using supervised learning such that the control output could be computed by a SNN. Second, based on a Reward-modulated Spike-Timing-Dependent-Plasticity (R-STDP) learning rule a SNN was trained directly in the same task.
+Both approaches in this work have been shown to successfully follow the desired path in different scenarios with varying complexity. While after training the R-STDP-based controller shows a better performance, it lacks the reward-prediction capabilities needed for more complex decision making tasks. Until such an algorithm is found, indirect training using classical reinforcement learning methods could provide a practical workaround.
 
 ## Start
 
