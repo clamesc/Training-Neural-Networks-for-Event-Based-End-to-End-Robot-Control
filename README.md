@@ -3,7 +3,6 @@
 This repository contains the code of my Master's thesis "[Training Neural Networks for Event-Based End-to-End Robot Control](TrainingNeuralNetworksForEventBasedEndToEndRobotControl_ClausMeschede.pdf)":
 
 - **Controller:** Contains the controller code as well as Matplotlib plots.
-- **Documentation:** Latex thesis files as well as final presentation.
 - **V-REP Scenarios:** The V-REP scene files for 3 different lane following scenarios as well as the Lua script handling the communication between robot and controller via ROS can be found here.
 - **data.tar.gz:** Contains all data
 - **TrainingNeuralNetworksForEventBasedEndToEndRobotControl_ClausMeschede.pdf:** Thesis PDF file
